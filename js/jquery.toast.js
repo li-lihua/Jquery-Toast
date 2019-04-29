@@ -30,18 +30,18 @@
 		}
 
 		$("#div-toast-" + id).text(msg);
-		var st = $(document).scrollTop(); //页面滑动高度
-		var objH = $("#div-toast-" + id).height();//浮动对象的高度
-		var ch = $(window).height();//屏幕的高度  
-		var objT = Number(st) + (Number(ch)-Number(objH)) / 2;   // 浮动高度+（（屏幕高度-对象高度））/2
+		var st = $(document).scrollTop(); 
+		var objH = $("#div-toast-" + id).height();
+		var ch = $(window).height();
+		var objT = Number(st) + (Number(ch)-Number(objH)) / 2;   
 		$("#div-toast-" + id).css("top",objT);
 		 
-		var sl = $(document).scrollLeft(); //页面滑动左移宽度
-		var objW = $("#div-toast-" + id).width();//浮动对象的宽度
-		var cw = $(window).width();//屏幕的宽度  
-		var objL = Number(sl) + (Number(cw) - Number(objW)) / 2; // 左移浮动宽度+（（屏幕宽度-对象宽度））/2
+		var sl = $(document).scrollLeft(); 
+		var objW = $("#div-toast-" + id).width();
+		var cw = $(window).width();
+		var objL = Number(sl) + (Number(cw) - Number(objW)) / 2; 
 		$("#div-toast-" + id).css("left",objL);
-		$("#div-toast-" + id).fadeIn(2000);//这里显示方式多种效果
+		$("#div-toast-" + id).fadeIn(2000);
 	}
 
 	
